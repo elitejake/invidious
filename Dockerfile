@@ -1,7 +1,5 @@
 FROM crystallang/crystal:0.36.1-alpine AS builder
 RUN apk add --no-cache curl sqlite-static yaml-static
-RUN apk install git
-CMD git clone https://github.com/iv-org/invidious
 WORKDIR /invidious
 COPY ./shard.yml ./shard.yml
 COPY ./shard.lock ./shard.lock
