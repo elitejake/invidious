@@ -1,0 +1,11 @@
+---
+application:
+  name: "invidious"
+  project: "Invidious"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-invidious"
+  routes:
+  - application_name: "invidious"
+    paths:
+    - "/*"
