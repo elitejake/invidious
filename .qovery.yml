@@ -3,6 +3,10 @@ application:
   name: "invidious"
   project: "Invidious"
   organization: "QoveryCommunity"
+databases:
+- type: postgresql
+  version: "11.5"
+  name: invidious
 routers:
 - name: "main-invidious"
   routes:
